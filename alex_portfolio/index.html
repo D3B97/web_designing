@@ -12,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 
 
@@ -24,9 +24,9 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid d-flex justify-content-center">
-                <div class="col-11 col-md-9 d-flex">
+                <div class="col-11 col-md-10 d-flex">
                     <a class="navbar-brand" href="#">Subham<span class="deb"> Deb</span></a>
-                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    <button onclick="openNav()" class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedConten-t" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -58,32 +58,84 @@
             </div>
         </nav>
     </div>
+
+
+    <!-- nav slide start -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Resume</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </div>
+      
+      
+    <!-- nav slide ends -->
+
+
+
     <div class="container mt-3">
         <div class="row justify-content-center ">
-            <div class="col-10 col-md-9 pr-box">
+            <div class="col-11 col-md-10 pr-box">
                 <div class="row justify-content-center mt-5">
                     <div class="col-12 col-md-3 d-flex justify-content-center img-head">
-                        <img class="img-photo" src="./img/photo.png">
+                        <img class="img-photo" src="./img/photo.jpg">
                     </div>
                     <div class="col-12 col-md-7 mt-2">
                         <div class="col-12 d-flex justify-content-center">
                             <p class="big-name">Subham Deb</p>
                         </div>
                         <div class="col-12 d-flex justify-content-center">
-                            <p class="dev-details">Web developer(MERN), Data Analyst</p>
+                            <p class="dev-details animate__animated animate__backInDown">Web developer(MERN), Data
+                                Analyst</p>
                         </div>
-                        <div class="col-12 d-flex justify-content-center">
-                            <a class="btn btn-primary btn-lg btn-floating" style="background-color: #ac2bac;" href="#!"
-                                role="button"><i class="fab fa-instagram"></i></a>
+                        <div class="col-12 d-flex justify-content-center mt-2">
+                            <a href="https://www.instagram.com/subham.deb.1253/" title="instagram" class="social-media me-3 d-flex justify-content-center align-items-center"><img
+                                    src="./img/instagram.png" /></a>
+                            <a href="https://www.facebook.com/subham.deb.1253" class="social-media me-3 d-flex justify-content-center align-items-center"><img
+                                    src="./img/facebook.png" /></a>
+                            <a href="https://twitter.com/subham_deb_" class="social-media me-3 d-flex justify-content-center align-items-center"><img
+                                    src="./img/twitter.png" /></a>
+                            <a href="https://github.com/D3B97" class="social-media me-3 d-flex justify-content-center align-items-center"><img
+                                    src="./img/github.png" /></a>
+
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-10 col-md-9 zzzz lst-half">
-                
+            <div class="col-11 col-md-10 zzzz lst-half">
+                <div class="row justify-content-center">
+                    <div class="col-10 mt-md-5 mt-2">
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                                <h3 class="abt-me">About <apan style=" color: #2eca7f;">Me</apan>
+                                </h3>
+                                <p class="abt-me-para">Hello! I’m Subham Deb, I'm a Software Developer and Data Analyst. Now working on python and Machine Learning.</p>
+                            </div>
+                            <div class="col-md-6 col-12 mt-sm-2 ">
+                                <div class="row justify-content-center">
+                                    <div class="col-6 mt-2">Age</div>
+                                    <div class="col-6 mt-2">24</div>
+                                    <div class="col-6 mt-2">Residence</div>
+                                    <div class="col-6 mt-2">India</div>
+                                    <div class="col-6 mt-2">Address</div>
+                                    <div class="col-6 mt-2">Memari, Kolkata, WB</div>
+                                    <div class="col-6 mt-2">Email</div>
+                                    <div class="col-6 mt-2 eml" type="email">subham.deb.1253@gmail.com</div>
+                                    <div class="col-6 mt-2">Freelance</div>
+                                    <div class="col-6 mt-2">Available</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+
 
     <!-- 
     <div class="container-fluid">
