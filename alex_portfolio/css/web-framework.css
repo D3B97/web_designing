@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+    
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+/* ================================================// custom scroll bar config  =============================================== */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(128, 128, 128);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(126, 126, 126);
+  }
+
+
+ /* chaneg placeholder color and others property */
+
+ ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #525252;
+    opacity: .5; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #525252;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #525252;
+  }
+
+
+
+/* ===================================================== margin and padding part  ================================================== */
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+.my-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+/* // margin top  */
+.mt-1{
+    margin-top:10px;
+}
+.mt-2{
+    margin-top:20px;
+}
+.mt-3{
+    margin-top:30px;
+}
+/* /margin right  */
+.mr-1{
+    margin-right:10px;
+}
+.mr-2{
+    margin-right:20px;
+}
+.mr-3{
+    margin-right:30px;
+}
+/* // margin bottom  also have below 700 */
+.ml-1{
+    margin-left:10px;
+}
+.ml-2{
+    margin-left:20px;
+}
+.ml-3{
+    margin-left:30px;
+}
+
+/* padding  */
+.pd-1{
+    padding: 5px;   
+}
+.pd-2{
+    padding: 10px !important;
+}
+
+/* ======================================================= container and row part ======================================================= */
+.container-box {
+    width: 80%;
+    background-color: rgb(236, 253, 255);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-box-fluid{
+    width:95%;
+    background-color: #ffffff00;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-content:flex-start;
+    width: 100%;
+}
+
+.flex-on{
+    display: flex;
+}
+
+
+/* ===================================================== making computer column width and numbers ================================================ */
+.col-1{
+    width: 8.33333%;
+    padding: 5px;
+}
+.col-2{
+    width: 16.66666%;
+    padding: 5px;
+}
+.col-3{
+    width: 24.99999%;
+    padding: 5px;
+}
+.col-4{
+    width: 33.33333%;
+    padding: 5px;
+}
+.col-5{
+    width: 41.66666%;
+    padding: 5px;
+}
+.col-6{
+    width: 49.99999%;
+    padding: 5px;
+}
+.col-7{
+    width: 58.33333%;
+    padding: 5px;
+}
+.col-8{
+    width: 66.66666%;
+    padding: 5px;
+}
+.col-9{
+    width: 74.99999%;
+    padding: 5px;
+}
+.col-10{
+    width: 83.3333%;
+    padding: 5px;
+}
+.col-11{
+    width: 91.66666%;
+    padding: 5px;
+}
+.col-12{
+    width: 99.99999%;
+    padding: 5px;
+}
+
+/* // contain justify and allgnment  */
+.justify-center{
+    justify-content: center;
+}
+.justify-end{
+    justify-content: end;
+}
+.align-center{
+    align-items: center;
+}
+
+
+.box1{
+    height: 50px;
+
+    background-color: #051616;
+}
+.box2{
+    height: 50px;
+
+    background-color: #0c9b9b;
+}
+.box3{
+    height: 50px;
+    
+    background-color: #0a4e4e;
+}
+.box4{
+    height: 50px;
+    
+    background-color: #203030;
+}
+
+.fr-700{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+    .container-box {
+        width: 90%;
+        background-color: rgb(199, 248, 252);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+/* for changing column in mobile  */
+    .col-m-1{
+        width: 8.33333%;
+        padding: 5px;
+    }
+    .col-m-2{
+        width: 16.66666%;
+        padding: 5px;
+    }
+    .col-m-3{
+        width: 24.99999%;
+        padding: 5px;
+    }
+    .col-m-4{
+        width: 33.33333%;
+        padding: 5px;
+    }
+    .col-m-5{
+        width: 41.66666%;
+        padding: 5px;
+    }
+    .col-m-6{
+        width: 49.99999%;
+        padding: 5px;
+    }
+    .col-m-7{
+        width: 58.33333%;
+        padding: 5px;
+    }
+    .col-m-8{
+        width: 66.66666%;
+        padding: 5px;
+    }
+    .col-m-9{
+        width: 74.99999%;
+        padding: 5px;
+    }
+    .col-m-10{
+        width: 83.3333%;
+        padding: 5px;
+    }
+    .col-m-11{
+        width: 91.66666%;
+        padding: 5px;
+    }
+    .col-m-12{
+        width: 99.99999%;
+        padding: 5px;
+    }
+
+    /* extras class  */
+    .hide-b-700{
+        display: none;
+    }
+    .fr-700{
+        display:flex;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .hide-b-700{
+        display: none;
+    }
+    .fr-700{
+        display:flex;
+    }
+
+
+
+    /* // margin bottom  */
+    .ml-b7-1{
+        margin-left:2px;
+    }
+    .ml-b7-2{
+        margin-left:8px;
+    }
+    .ml-b7-3{
+        margin-left:14px;
+    }
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  this is a first library thst I'm making */
+/* 
+    b7 - enable below 700px of width 
+
+
+*/
